@@ -1,0 +1,54 @@
+{% extends 'base.html/' %}
+
+<title>{% block title %}Головна{% endblock %}</title>
+
+{% block content %}
+<!-- Main -->
+<main class="main__home">
+
+    <!-- Section-Slide-Main -->
+    <section class="section__slide">
+        <div class="container">
+            <div class="section-slide-wrap">
+                <div class="section-slide-carousel owl-carousel owl-theme">
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide/Slide1.webp" alt="stihl">
+                    </div>
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide/Slide2.webp" alt="stihl">
+                    </div>
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide/Slide3.webp" alt="stihl">
+                    </div>
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide/Slide4.webp" alt="stihl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Section-Slide-Main -->
+
+    <!-- Section Cart Products -->
+    <section class="cart__products">
+        <div class="container">
+            <div class="wrap__cart__products">
+                {% for item in new_products %}
+                <div class="product__item">
+                    <img src="{{item.image.url}}" alt="">
+                    <div class="product__list">
+                        <h3>{{item.name}}</h3>
+                        <span class="price">{{item.price}} грн</span>
+                        <br>
+                        <a href="tel:+380673632002">Замовити</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>        
+        </div>      
+    </section>
+    <!-- End Section Cart Products  -->
+
+</main>
+<!-- End main -->
+{% endblock %}
