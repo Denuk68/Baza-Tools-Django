@@ -1,0 +1,89 @@
+{% extends 'base.html/' %}
+
+<title>{% block title %}Про нас{% endblock %}</title>
+
+
+{% block content %}
+ <!-- Main -->
+ <main class="main__about">
+    <!-- Section-Slide-Main -->
+    <section class="section__slide">
+        <div class="container">
+            <div class="section-slide-wrap">
+                <div class="section-slide-carousel owl-carousel owl-theme">
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide__about/Baza.jpg" alt="tools">
+                    </div>
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide__about/Bosch.jpg" alt="bosch">
+                    </div>
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide__about/Makita.jpg" alt="makita">
+                    </div>
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide__about/Metabo.jpg" alt="metabo">
+                    </div>
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide__about/Stanley.jpg" alt="stanley">
+                    </div>
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide__about/Titan1.jpg" alt="titan">
+                    </div>
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide__about/Titan2.jpg" alt="titan">
+                    </div>
+                    <div class="single-slide">
+                        <img src="{{ STATIC_PREFIX }}img/slide__about/Yato.jpg" alt="yato">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Section-Slide-Main -->
+    <section class="info">
+        <div class="container">
+            <div class="wrapper__info">
+                <h1>МАГАЗИН БАЗА ІНСТРУМЕНТІВ – ЯКІСНИЙ ПРОФЕСІЙНИЙ ТА ПОБУТОВИЙ ЕЛЕКТРОІНСТРУМЕНТ,
+                    БЕНЗОІНСТРУМЕНТ, ТЕХНІКА ДЛЯ САДУ ГОРОДУ, ДЕРЕВООБРОБНА, БУДІВЕЛЬНА, ПОБУТОВА І СНІГОПРИБИРАЛЬНА
+                    ТЕХНІКА, НАСОСИ, ГЕНЕРАТОРИ</h1>
+                <p>Шукаєте якісний інструмент для СТО, деревообробної майстерні, будівельних робіт чи догляду за
+                    садом і газоном?</p>
+                <p>Кожен майстер знайде у нас весь необхідний інструмент – акумуляторний, ручний, бензоінструмент,
+                    електроінструмент, зварювальне обладнання промислового та побутового призначення. Також маємо
+                    газові та вугільні грилі барбекю для професійного та побутового використання.</p>
+                <h2>БУДІВЕЛЬНИЙ І РУЧНИЙ ІНСТРУМЕНТ STIHL, VIKING, MAKITA, METABO, BOSCH, DEWALT,, STANLEY, FLEX,
+                    YATO, TITAN. <br> ПРОПОНУЄМО ПРОДАЖ:</h2>
+                <ul>
+                    <li>електропил, болгарок, перфораторів, відбійних молотків;</li>
+                    <li>шуруповертів, фрезерних верстатів, електролобзиків;</li>
+                    <li>точильних верстатів, промислових фенів;</li>
+                    <li>наборів інструментів, зварювальних апаратів;</li>
+                    <li>компресорів, пневматичних зубил;</li>
+                    <li>гайковертів, степлерів;</li>
+                    <li>бензоінструментів та електроінструментів: генераторів, мотоблоків, бензопил, бензотримерів,
+                        газонокосарок, культиваторів, мотопомп, промислових пилососів, мийок високого тиску,
+                        бетонозмішувачів, обприскувачів, садових насосів, промислового обладнання, снігоприбиральної
+                        техніки, інструментів для ювелірів та митців;</li>
+                    <li>розхідних матеріалів та аксесуарів: ланцюгів, відрізних, пильних дисків, дротяних щіток,
+                        свердел, фрез, полірувальних та шліфувальних матеріалів, скоб та цвяхів.</li>
+                </ul>
+                <h2>На весь асортимент нашої продукції діє гарантія до 3-х років. Також пропонуємо доставку по місту
+                    Рівне та по всій Україні.</h2>
+                <h2>Послуги:</h2>
+                <ul>
+                    <li>ремонт техніки та приладдя;</li>
+                    <li>діагностика поломки;</li>
+                    <li>консультування.</li>
+                </ul>
+                <h2> Графік роботи магазину:</h2>
+                <ul>
+                    <li>Пн.- Пт.: 09:00 – 18:00</li>
+                    <li>Сб.- Нд.: 10:00 – 16:00</li>
+                    <li>Нд.: Вихідний</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- End main -->
+{% endblock  %}

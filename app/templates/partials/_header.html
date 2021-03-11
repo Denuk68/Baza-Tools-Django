@@ -32,9 +32,18 @@
                 </div>
                 <nav class="header__menu">
                     <ul class="header__list">
-                        <li><a href="">Головна</a></li>
-                        <li><a href="">Про нас</a></li>
-                        <li><a href="">Як нас знайти</a></li>
+                        <li>
+                            {% url 'pages:index' as url_index %}
+                            <a {% if request.path == url_index %} class="active" {% endif %} href="{% url 'pages:index' %}">Головна</a>
+                        </li>
+                        <li>
+                            {% url 'pages:about' as url_about %}
+                            <a {% if request.path == url_about %} class="active" {% endif %} href="{% url 'pages:about' %}">Про нас</a>
+                        </li>
+                        <li>
+                            {% url 'pages:location' as url_location %}
+                            <a {% if request.path == url_location %} class="active" {% endif %} href="{% url 'pages:location' %}">Як нас знайти</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -43,13 +52,14 @@
     <div class="header__burger__menu">
         <div class="container">
             <ul class="header__burger__list">
-                <li><span>Бренди</span></li>                  
+                <li><span>Каталог</span></li>
                 <li><a href="">Bosch</a></li>
                 <li><a href="">DeWalt</a></li>
                 <li><a href="">Makita</a></li>
                 <li><a href="">Metabo</a></li>
-                <li><a href="">Stihl</a></li>
                 <li><a href="">Stanley</a></li>
+                <li><a href="">Stihl</a></li>
+                <li><a href="">Titan</a></li>
             </ul>
         </div>
     </div>

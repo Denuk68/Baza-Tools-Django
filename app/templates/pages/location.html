@@ -1,0 +1,24 @@
+{% extends 'base.html/' %}
+
+<title>{% block title %}Як нас знайти{% endblock %}</title>
+
+
+{% block content %}
+<!-- Main -->
+<main class="main__location">
+    <div class="container">
+        <!-- Line -->
+        <div class="container">
+            <hr class="line" data-content="м.Рівне , вул.Макарова 20">
+        </div>
+        <!-- End Line  -->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10124.447370985985!2d26.2036013!3d50.6250391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9945e1e27a561c1!2z0JHQsNC30LAg0ZbQvdGB0YLRgNGD0LzQtdC90YLRltCy!5e0!3m2!1suk!2sua!4v1614783884273!5m2!1suk!2sua"
+                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</main>
+<!-- End main -->
+{% endblock %}

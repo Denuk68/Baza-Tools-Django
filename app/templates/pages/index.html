@@ -33,17 +33,32 @@
     <section class="cart__products">
         <div class="container">
             <div class="wrap__cart__products">
+
                 {% for item in new_products %}
                 <div class="product__item">
+                    <h3>{{item.name}}</h3>
                     <img src="{{item.image.url}}" alt="">
-                    <div class="product__list">
-                        <h3>{{item.name}}</h3>
+                    <div class="product_list">
+                        <ul>
+                            <li>{{item.description1}}</li>
+                            <li>{{item.description2}}</li>
+                            <li>{{item.description3}}</li>
+                            <li>{{item.description4}}</li>
+                            <li>{{item.description5}}</li>
+                            <li>{{item.description6}}</li>
+                            <li>{{item.description7}}</li>
+                        </ul>
+                    </div>
+                    <div class="product__buy">
                         <span class="price">{{item.price}} грн</span>
-                        <br>
                         <a href="tel:+380673632002">Замовити</a>
+                    </div>
+                    <div class="new">
+                        <img src="{{ STATIC_PREFIX }}img/new.png" alt="">
                     </div>
                 </div>
                 {% endfor %}
+
             </div>        
         </div>      
     </section>

@@ -20,4 +20,11 @@ def index(request):
         'new_products': new_products,
         'dril_bosch': dril_bosch,
     }
-    return render(request, 'pages/index.html',context)
+    return render(request, 'pages/index.html', context)
+
+
+def about(request): 
+    return render(request, 'pages/about.html')
+
+def location(request): 
+    return render(request, 'pages/location.html')
